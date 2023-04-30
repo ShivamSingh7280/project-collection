@@ -1,0 +1,346 @@
+/*================================================ NavBar==================================================== */
+
+#icon {
+	width: 27px;
+	height: 9px;
+	background: linear-gradient(96.34deg, #e537b0 0%, #c040df 100%);
+	border-radius: 4.5px;
+}
+
+._handleHeader {
+	background: #c31432;
+	background: -webkit-linear-gradient(to right, #240b36, #c31432);
+	background: linear-gradient(to right, #240b36, #c31432);
+}
+
+.nav-item {
+	margin-top: 6px;
+}
+
+.nav-link {
+	margin-right: 15px;
+}
+
+.dropdown {
+	margin-top: 12px;
+	margin-right: 15px;
+	position: fixed;
+	z-index: 2;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+	border-radius: 4px;
+	background: #1c92d2;
+	background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
+	background: linear-gradient(to right, #f2fcfe, #1c92d2);
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	background: #00416a;
+	background: -webkit-linear-gradient(to right, #e4e5e6, #00416a);
+	background: linear-gradient(to right, #e4e5e6, #00416a);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background: #ada996;
+	background: -webkit-linear-gradient(
+		to right,
+		#eaeaea,
+		#dbdbdb,
+		#f2f2f2,
+		#ada996
+	);
+	background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*================================================ NavBar==================================================== */
+
+/* ==============================================quotesDiv ===================================================*/
+
+.quotesDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 55vh;
+	width: 100%;
+	background: #c31432;
+	background: -webkit-linear-gradient(to right, #240b36, #c31432);
+	background: linear-gradient(to right, #240b36, #c31432);
+}
+
+.wrapper {
+	width: 95%;
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 30px 30px 25px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.wrapper header {
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.wrapper .content {
+	margin: 35px 0;
+}
+
+.content .quote-area {
+	display: flex;
+	justify-content: center;
+}
+
+.quote-area i {
+	font-size: 15px;
+}
+
+.quote-area i:first-child {
+	margin: 3px 10px 0 0;
+}
+
+.quote-area i:last-child {
+	display: flex;
+	align-items: flex-end;
+	margin-left: 4px;
+	margin-bottom: 29px;
+}
+
+.quote-area .quote {
+	font-size: 25px;
+	word-break: break-all;
+}
+
+.content .author {
+	display: flex;
+	margin-top: 20px;
+	font-size: 18px;
+	font-style: italic;
+	justify-content: flex-end;
+}
+
+.author span:first-child {
+	margin: -7px 5px 0 0;
+	font-family: monospace;
+}
+
+.wrapper .buttons {
+	border-top: 1px solid #ccc;
+}
+
+.buttons .features {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	justify-content: space-between;
+}
+
+.features ul {
+	display: flex;
+}
+
+.features ul li {
+	list-style: none;
+	margin: 0 5px;
+	height: 47px;
+	width: 47px;
+	border: 2px solid #5372f0;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #5372f0;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.features ul li:hover {
+	color: #fff;
+	background-color: #5372f0;
+}
+
+.features button {
+	border: none;
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+	font-style: 16px;
+	padding: 13px 22px;
+	border-radius: 30px;
+	background-color: #5372f0;
+}
+
+/* ==============================================quotesDiv ===================================================*/
+
+/* ==============================================cardSlider ===================================================*/
+
+.cardSlider {
+	height: 45vh;
+	background-color: #1c92d2;
+	border: 1px solid blueviolet;
+}
+
+/* ==============================================cardSlider ===================================================*/
+
+/* =========================================footer CSS====================================================== */
+
+footer {
+	width: 100%;
+	padding: 16px 0px;
+	color: #999;
+	vertical-align: bottom;
+	margin-top: 40px;
+	text-align: center;
+}
+#container-footer {
+	position: relative;
+	left: 10px;
+	top: 30px;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+
+#footer {
+	display: flex;
+	justify-content: space-between;
+	background: #c31432;
+	background: -webkit-linear-gradient(to right, #240b36, #c31432);
+	background: linear-gradient(to right, #240b36, #c31432);
+}
+
+.footer-icon {
+	height: 13vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer ul {
+	display: flex;
+}
+
+#footer ul li {
+	position: relative;
+	display: block;
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	line-height: 36px;
+	color: whitesmoke;
+	background-color: black;
+	cursor: pointer;
+	border: 2px solid white;
+	border-radius: 50%;
+	margin: 0 15px;
+}
+
+#footer ul li:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	background-color: #d35400;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	z-index: -1;
+	transform: scale(0.9);
+	transition: 0.5s;
+}
+
+#footer ul li:hover {
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(1):before {
+	background-color: #0a82ed;
+}
+
+#footer ul li:nth-child(1):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #0a82ed;
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(2):before {
+	background-color: #04a2ffb3;
+}
+
+#footer ul li:nth-child(2):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #04a2ffb3;
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(3):before {
+	background: #d6249f;
+	background: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+#footer ul li:nth-child(3):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #e23670;
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(4):before {
+	background: #1565c0;
+}
+
+#footer ul li:nth-child(4):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #0a82ed;
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(5):before {
+	background-color: #ff1a1a;
+}
+
+#footer ul li:nth-child(5):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #ff1a1a;
+	transform: scale(1.2);
+}
+
+/* =========================================footer CSS====================================================== */

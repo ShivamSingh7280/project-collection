@@ -137,6 +137,11 @@
 	margin-bottom: 29px;
 }
 
+.quoteContent {
+	font-size: 30px;
+	font-weight: 400;
+}
+
 .quote-area .quote {
 	font-size: 25px;
 	word-break: break-all;
@@ -145,13 +150,14 @@
 .content .author {
 	display: flex;
 	margin-top: 20px;
-	font-size: 18px;
+	font-size: 35px;
+	font-weight: 500;
 	font-style: italic;
 	justify-content: flex-end;
 }
 
 .author span:first-child {
-	margin: -7px 5px 0 0;
+	margin: -15px 5px 0 0;
 	font-family: monospace;
 }
 
@@ -215,6 +221,7 @@
 	margin-bottom: 0px;
 	min-height: 45vh;
 	background-color: white;
+	width: 100%;
 }
 
 html,
@@ -288,6 +295,29 @@ body {
 	font-size: 13px;
 }
 
+#swiper-button-next {
+	opacity: 0.7;
+	height: 55px;
+	width: 55px;
+	background-color: black;
+	color: white;
+	font-weight: 400;
+	padding-left: 10px;
+	border-radius: 50%;
+	border: 1px solid white;
+}
+
+#swiper-button-prev {
+	opacity: 0.7;
+	height: 55px;
+	width: 55px;
+	background-color: black;
+	color: white;
+	font-weight: 400;
+	padding-right: 10px;
+	border-radius: 50%;
+	border: 1px solid white;
+}
 /* ==============================================cardSlider ===================================================*/
 
 /* =========================================footer CSS====================================================== */

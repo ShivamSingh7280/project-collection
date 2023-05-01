@@ -40,9 +40,8 @@
 .navbar a:hover,
 .dropdown:hover .dropbtn {
 	border-radius: 4px;
-	background: #1c92d2;
-	background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);
-	background: linear-gradient(to right, #f2fcfe, #1c92d2);
+	/* background-color: #5372f0; */
+	background-color: mintcream;
 }
 
 .dropdown-content {
@@ -99,11 +98,13 @@
 
 .wrapper {
 	width: 95%;
-	background-color: #fff;
+	/* background-color: #fff; */
 	border-radius: 15px;
 	padding: 30px 30px 25px;
 	margin-top: 10px;
 	margin-bottom: 15px;
+	background-image: url("https://res.cloudinary.com/dujpte5nz/image/upload/v1682930706/pexels-tim-eiden-1222561_dfc2e6.jpg");
+	background-size: cover;
 }
 
 .wrapper header {
@@ -200,14 +201,91 @@
 	background-color: #5372f0;
 }
 
+.loading {
+	opacity: 0.7;
+	pointer-events: none;
+}
+
 /* ==============================================quotesDiv ===================================================*/
 
 /* ==============================================cardSlider ===================================================*/
 
 .cardSlider {
-	height: 45vh;
-	background-color: #1c92d2;
-	border: 1px solid blueviolet;
+	margin-top: 35px;
+	margin-bottom: 0px;
+	min-height: 45vh;
+	background-color: white;
+}
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+.cardText {
+	position: absolute;
+	z-index: 1;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	top: 3%;
+	color: white;
+	background-color: #285aeb;
+	border-radius: 5px;
+	border: 1px solid #285aeb;
+	left: -10px;
+	/* transform: translateX(-50%); */
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+}
+
+/* .swiper-slide:hover {
+	transform: scale(0.9);
+	transition: 0.5s all;
+} */
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	object-fit: cover;
+}
+
+.swiper {
+	width: 95%;
+	height: 350px;
+	margin: 20px auto;
+}
+
+.append-buttons {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.append-buttons button {
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #007aff;
+	color: #007aff;
+	text-decoration: none;
+	padding: 4px 10px;
+	border-radius: 4px;
+	margin: 0 10px;
+	font-size: 13px;
 }
 
 /* ==============================================cardSlider ===================================================*/

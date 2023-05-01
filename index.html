@@ -12,6 +12,18 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 		<script src="fontawesome/js/all.js"></script>
+
+		<!-- <script type="module">
+			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+			const swiper = new Swiper(...)
+		</script> -->
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	</head>
 
 	<body>
@@ -45,9 +57,13 @@
 										<i class="fa fa-caret-down"></i>
 									</button>
 									<div class="dropdown-content">
-										<a href="#"> Calculator </a>
+										<a href="#"> Tic Tac Toe </a>
+										<a href="#"> BMI Calculator</a>
 										<a href="#"> Snake Game</a>
 										<a href="#"> Resize & Compress Image</a>
+										<a href="#"> Maths Quiz</a>
+										<a href="#"> Typing Test</a>
+										<a href="#"> Weather Checker</a>
 									</div>
 								</div>
 							</li>
@@ -70,27 +86,27 @@
 				<div class="content">
 					<div class="quote-area">
 						<i class="fas fa-quote-left" aria-hidden="true"></i>
-						<p class="quote">
-							Never Give up because you never know if the next try is going to
-							be the one that works.
+						<p class="quoteContent">
+							1st Rule Of Programming: If It Works Dont Touch It. 2nd Rule:
+							Never Forget Rule 1.
 						</p>
 						<i class="fa fa-quote-right" aria-hidden="true"></i>
 					</div>
 					<div class="author">
 						<span> __ </span>
-						<span class="name"> Christiano Ronaldo </span>
+						<span class="name"> Developer </span>
 					</div>
 				</div>
 				<div class="buttons">
 					<div class="features">
 						<ul>
-							<li class="sound">
+							<li id="sound">
 								<i class="fa fa-volume-up" aria-hidden="true"></i>
 							</li>
-							<li class="copy">
+							<li id="copy">
 								<i class="fa fa-clone" aria-hidden="true"></i>
 							</li>
-							<li class="twitter"><i class="fab fa-twitter"></i></li>
+							<li id="twitter"><i class="fab fa-twitter"></i></li>
 						</ul>
 						<button id="nextQuoteBtn">New Quote</button>
 					</div>
@@ -103,7 +119,100 @@
 		<!----------------------------------- cardSlider --------------------------------------------------------->
 
 		<div class="cardSlider">
-			<img src="" alt="" srcset="" />
+			<div #swiperRef="" class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="">
+							<div class="cardText">
+								<h3>Tic Tac Toe</h3>
+							</div>
+							<img
+								src="https://res.cloudinary.com/dujpte5nz/image/upload/v1682930706/pexels-pixabay-220057_brh168.jpg"
+								alt="Tic Tac Toe"
+								srcset="" />
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="">
+							<div class="cardText">
+								<h3>BMI Calculator</h3>
+							</div>
+							<img
+								src="https://res.cloudinary.com/dujpte5nz/image/upload/v1682930706/pexels-cottonbro-studio-4056535_tk4k5r.jpg"
+								alt="BMI Calculator"
+								srcset="" />
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="">
+							<div class="cardText">
+								<h3>Snake Game</h3>
+							</div>
+							<img
+								src="https://res.cloudinary.com/dujpte5nz/image/upload/v1682930707/pexels-pixabay-34426_ffgevv.jpg"
+								alt="Snake Game"
+								srcset="" />
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="">
+							<div class="cardText">
+								<h3>Resize & Compress Image</h3>
+							</div>
+							<img
+								src="https://res.cloudinary.com/dujpte5nz/image/upload/v1682930711/pexels-tirachard-kumtanom-733853_abeyzg.jpg"
+								alt="Resize & Compress Image"
+								srcset="" />
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="">
+							<div class="cardText">
+								<h3>Maths Quiz</h3>
+							</div>
+							<img
+								src="https://res.cloudinary.com/dujpte5nz/image/upload/v1682930707/pexels-magda-ehlers-1329296_ar2pc2.jpg"
+								alt="Maths Quiz"
+								srcset="" />
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="">
+							<div class="cardText">
+								<h3>Typing Test</h3>
+							</div>
+							<img
+								src="https://res.cloudinary.com/dujpte5nz/image/upload/v1682930706/pexels-andrea-piacquadio-3808904_wjtsq5.jpg"
+								alt="Typing Test"
+								srcset="" />
+						</a>
+					</div>
+
+					<div class="swiper-slide">
+						<a href="">
+							<div class="cardText">
+								<h3>Weather Checker</h3>
+							</div>
+
+							<img
+								src="https://res.cloudinary.com/dujpte5nz/image/upload/v1682930707/pexels-daniel-maforte-5544043_esrvco.jpg"
+								alt="Weather Checker"
+								srcset="" />
+						</a>
+					</div>
+					<!-- <div class="swiper-slide">Slide 8</div>
+					<div class="swiper-slide">Slide 9</div>
+					<div class="swiper-slide">Slide 10</div> -->
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
 		</div>
 
 		<!----------------------------------- cardSlider --------------------------------------------------------->
@@ -131,6 +240,6 @@
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"></script>
 
-		<script src="index.js"></script>
+		<script src="index.js" defer></script>
 	</body>
 </html>

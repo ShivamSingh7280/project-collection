@@ -2,10 +2,11 @@
 const quoteText = document.getElementsByClassName("quoteContent");
 const authorName = document.getElementsByClassName("name");
 const quotebtn = document.getElementById("nextQuoteBtn");
-const soundBtn = document.getElementById("sound");
+const soundBtn = document.getElementsByClassName("sound");
+// soundBtn = [<speaker icon>, <speak p tag>] => HTMLCollection []
 const copyBtn = document.getElementById("copy");
 const twitterBtn = document.getElementById("twitter");
-
+let arr = [2, 3];
 let randomQuote = async () => {
 	try {
 		quotebtn.classList.add("loading");
@@ -23,15 +24,23 @@ let randomQuote = async () => {
 	}
 };
 
-soundBtn.addEventListener("click", () => {
-	let utterence = new SpeechSynthesisUtterance(
-		`${quoteText[0].textContent} By ${authorName[0].textContent}`
-	);
-	// utterence.pitch = 1;
-	// utterence.rate = 1.2;
-	// utterence.volume = 1;
-	speechSynthesis.speak(utterence);
+Array.from(soundBtn).forEach((btn) => {
+	btn.addEventListener("click", () => {
+		let utterence = new SpeechSynthesisUtterance(
+			`${quoteText[0].textContent} By ${authorName[0].textContent}`
+		);
+		speechSynthesis.speak(utterence);
+	});
 });
+
+// for (let index = 0; index < soundBtn.length; index++) {
+// 	soundBtn[index].addEventListener("click", () => {
+// 		let utterence = new SpeechSynthesisUtterance(
+// 			`${quoteText[0].textContent} By ${authorName[0].textContent}`
+// 		);
+// 		speechSynthesis.speak(utterence);
+// 	});
+// }
 
 copyBtn.addEventListener("click", () => {
 	navigator.clipboard.writeText(quoteText[0].textContent);
@@ -46,12 +55,12 @@ quotebtn.addEventListener("click", randomQuote);
 
 //=============================swipper================================================
 
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
 	slidesPerView: 4,
 	centeredSlides: false,
 	spaceBetween: 30,
 	pagination: {
-		el: ".swiper-pagination",
+		// el: ".swiper-pagination",
 		type: "fraction",
 	},
 	navigation: {

@@ -8,9 +8,7 @@
 }
 
 ._handleHeader {
-	background: #c31432;
-	background: -webkit-linear-gradient(to right, #240b36, #c31432);
-	background: linear-gradient(to right, #240b36, #c31432);
+	background-color: #007aff;
 }
 
 .nav-item {
@@ -26,6 +24,7 @@
 	margin-right: 15px;
 	position: fixed;
 	z-index: 2;
+	background-color: #007aff;
 }
 
 .navbar a {
@@ -37,12 +36,16 @@
 	text-decoration: none;
 }
 
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-	border-radius: 4px;
-	/* background-color: #5372f0; */
-	background-color: mintcream;
+.dropbtn {
+	border: #007aff;
+	margin-top: 2px;
+	background-color: #007aff;
 }
+
+/* .navbar a:hover,
+.dropdown:hover .dropbtn {
+	background-color: #007aff;
+} */
 
 .dropdown-content {
 	display: none;
@@ -50,9 +53,7 @@
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
-	background: #00416a;
-	background: -webkit-linear-gradient(to right, #e4e5e6, #00416a);
-	background: linear-gradient(to right, #e4e5e6, #00416a);
+	background-color: white;
 }
 
 /* Links inside the dropdown */
@@ -66,15 +67,7 @@
 }
 
 .dropdown-content a:hover {
-	background: #ada996;
-	background: -webkit-linear-gradient(
-		to right,
-		#eaeaea,
-		#dbdbdb,
-		#f2f2f2,
-		#ada996
-	);
-	background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+	background-color: #007aff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -91,9 +84,7 @@
 	justify-content: center;
 	min-height: 55vh;
 	width: 100%;
-	background: #c31432;
-	background: -webkit-linear-gradient(to right, #240b36, #c31432);
-	background: linear-gradient(to right, #240b36, #c31432);
+	background-color: #007aff;
 }
 
 .wrapper {
@@ -103,7 +94,11 @@
 	padding: 30px 30px 25px;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	background-image: url("https://res.cloudinary.com/dujpte5nz/image/upload/v1682930706/pexels-tim-eiden-1222561_dfc2e6.jpg");
+	/* background-color: #f5f5f5; */
+	/* background-image: url("https://res.cloudinary.com/dujpte5nz/image/upload/v1685217375/pexels-karolina-grabowska-4195586_tlvbqf.jpg"); */
+
+	background-color: white;
+	background-blend-mode: white;
 	background-size: cover;
 }
 
@@ -215,7 +210,7 @@
 /* ==============================================quotesDiv ===================================================*/
 
 /* ==============================================cardSlider ===================================================*/
-
+/* 
 .cardSlider {
 	margin-top: 35px;
 	margin-bottom: 0px;
@@ -232,6 +227,7 @@ body {
 
 .cardText {
 	position: absolute;
+	font-size: 20px;
 	z-index: 1;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -241,6 +237,7 @@ body {
 	border-radius: 5px;
 	border: 1px solid #285aeb;
 	left: -10px;
+	padding: 0px;
 	/* transform: translateX(-50%); */
 }
 
@@ -263,7 +260,7 @@ body {
 	transform: scale(0.9);
 	transition: 0.5s all;
 } */
-
+/* 
 .swiper-slide img {
 	display: block;
 	width: 100%;
@@ -318,7 +315,64 @@ body {
 	border-radius: 50%;
 	border: 1px solid white;
 }
+ */ 
+
 /* ==============================================cardSlider ===================================================*/
+
+/* Grid */
+
+.container{
+		margin-top: 35px;
+		margin-bottom: 0px;
+		min-height: 45vh;
+		background-color: white;
+		width: 100%;
+	}
+
+
+.tile {
+	height: 400px;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.tile img {
+	height: 100%;
+	width: 100%;
+	transition: 0.4s all;
+}
+
+.tile:hover img {
+	filter: brightness(50%);
+	transform: scale(1.1);
+}
+
+.tile-text {
+	position: absolute;
+	z-index: 1;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	 /* bottom : 0; */
+	left: 50%;
+	top:10px;
+	
+	color: black;
+	font-size: larger;
+	font-weight: 900;
+	transform: translateX(-50%);
+}
+
+.hero-subheading {
+	font-size: 24px;
+	font-weight: 100;
+}
+
+.heading-adventure {
+	margin-left: 50px;
+}
+
+/* Grid */
 
 /* =========================================footer CSS====================================================== */
 
@@ -342,9 +396,7 @@ footer {
 #footer {
 	display: flex;
 	justify-content: space-between;
-	background: #c31432;
-	background: -webkit-linear-gradient(to right, #240b36, #c31432);
-	background: linear-gradient(to right, #240b36, #c31432);
+	background-color: #007aff;
 }
 
 .footer-icon {

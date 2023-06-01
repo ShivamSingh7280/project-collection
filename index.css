@@ -9,6 +9,9 @@
 
 ._handleHeader {
 	background-color: #007aff;
+	font-family: "Montserrat", sans-serif;
+	font-size: large;
+	font-weight: 200;
 }
 
 .nav-item {
@@ -42,10 +45,11 @@
 	background-color: #007aff;
 }
 
-/* .navbar a:hover,
-.dropdown:hover .dropbtn {
-	background-color: #007aff;
-} */
+#dropdown-content {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
+	font-size: small;
+}
 
 .dropdown-content {
 	display: none;
@@ -85,20 +89,18 @@
 	min-height: 55vh;
 	width: 100%;
 	background-color: #007aff;
+	font-family: "Montserrat", sans-serif;
 }
 
 .wrapper {
-	width: 95%;
-	/* background-color: #fff; */
-	border-radius: 15px;
+	width: 90%;
+	border-radius: 25px;
 	padding: 30px 30px 25px;
 	margin-top: 10px;
-	margin-bottom: 15px;
+	margin-bottom: 35px;
 	/* background-color: #f5f5f5; */
 	/* background-image: url("https://res.cloudinary.com/dujpte5nz/image/upload/v1685217375/pexels-karolina-grabowska-4195586_tlvbqf.jpg"); */
-
 	background-color: white;
-	background-blend-mode: white;
 	background-size: cover;
 }
 
@@ -211,6 +213,7 @@
 
 /* ==============================================cardSlider ===================================================*/
 /* 
+
 .cardSlider {
 	margin-top: 35px;
 	margin-bottom: 0px;
@@ -239,9 +242,9 @@ body {
 	left: -10px;
 	padding: 0px;
 	/* transform: translateX(-50%); */
-}
+/* } */
 
-.swiper {
+/* .swiper {
 	width: 100%;
 	height: 100%;
 }
@@ -254,7 +257,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	border-radius: 15px;
-}
+} */
 
 /* .swiper-slide:hover {
 	transform: scale(0.9);
@@ -315,20 +318,22 @@ body {
 	border-radius: 50%;
 	border: 1px solid white;
 }
- */ 
+ */
 
 /* ==============================================cardSlider ===================================================*/
 
 /* Grid */
 
-.container{
-		margin-top: 35px;
-		margin-bottom: 0px;
-		min-height: 45vh;
-		background-color: white;
-		width: 100%;
-	}
-
+.container {
+	margin-top: 35px;
+	margin-bottom: 0px;
+	min-height: 45vh;
+	background-color: white;
+	width: 100%;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
+	font-size: larger;
+}
 
 .tile {
 	height: 400px;
@@ -353,10 +358,8 @@ body {
 	z-index: 1;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	 /* bottom : 0; */
 	left: 50%;
-	top:10px;
-	
+	top: 10px;
 	color: black;
 	font-size: larger;
 	font-weight: 900;
@@ -383,6 +386,9 @@ footer {
 	vertical-align: bottom;
 	margin-top: 40px;
 	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: large;
+	font-weight: 200;
 }
 #container-footer {
 	position: relative;

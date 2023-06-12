@@ -6,7 +6,6 @@ const soundBtn = document.getElementsByClassName("sound");
 // soundBtn = [<speaker icon>, <speak p tag>] => HTMLCollection []
 const copyBtn = document.getElementById("copy");
 const twitterBtn = document.getElementById("twitter");
-let arr = [2, 3];
 let randomQuote = async () => {
 	try {
 		quotebtn.classList.add("loading");
@@ -53,18 +52,4 @@ twitterBtn.addEventListener("click", () => {
 
 quotebtn.addEventListener("click", randomQuote);
 
-//=============================swipper================================================
-
-const swiper = new Swiper(".mySwiper", {
-	slidesPerView: 4,
-	centeredSlides: false,
-	spaceBetween: 30,
-	pagination: {
-		// el: ".swiper-pagination",
-		type: "fraction",
-	},
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-});
+//=============================DARKMODE================================================

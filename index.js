@@ -32,15 +32,6 @@ Array.from(soundBtn).forEach((btn) => {
 	});
 });
 
-// for (let index = 0; index < soundBtn.length; index++) {
-// 	soundBtn[index].addEventListener("click", () => {
-// 		let utterence = new SpeechSynthesisUtterance(
-// 			`${quoteText[0].textContent} By ${authorName[0].textContent}`
-// 		);
-// 		speechSynthesis.speak(utterence);
-// 	});
-// }
-
 copyBtn.addEventListener("click", () => {
 	navigator.clipboard.writeText(quoteText[0].textContent);
 });
@@ -52,4 +43,81 @@ twitterBtn.addEventListener("click", () => {
 
 quotebtn.addEventListener("click", randomQuote);
 
-//=============================DARKMODE================================================
+// <---------------------------------Card Section---------------------------------->
+
+let cards = [
+	{
+		id: 1,
+		text: "Tic Tac Toe",
+		image:
+			"https://res.cloudinary.com/dujpte5nz/image/upload/v1686747385/tictactoe_twxc8u.avif",
+	},
+	{
+		id: 2,
+		text: "BMI Calculator",
+		image:
+			"https://res.cloudinary.com/dujpte5nz/image/upload/v1686747607/bmi_zhenxz.jpg",
+	},
+	{
+		id: 3,
+		text: "Snake Game",
+		image:
+			"https://res.cloudinary.com/dujpte5nz/image/upload/v1682930707/pexels-pixabay-34426_ffgevv.jpg",
+	},
+	{
+		id: 4,
+		text: "Resize & Compress Image",
+		image:
+			"https://res.cloudinary.com/dujpte5nz/image/upload/v1682930711/pexels-tirachard-kumtanom-733853_abeyzg.jpg",
+	},
+	{
+		id: 5,
+		text: "Quiz",
+		image:
+			"https://res.cloudinary.com/dujpte5nz/image/upload/v1682930707/pexels-magda-ehlers-1329296_ar2pc2.jpg",
+	},
+	{
+		id: 6,
+		text: "Typing Test",
+		image:
+			"https://res.cloudinary.com/dujpte5nz/image/upload/v1682930706/pexels-andrea-piacquadio-3808904_wjtsq5.jpg",
+	},
+	{
+		id: 7,
+		text: "Weather Checker",
+		image:
+			"https://res.cloudinary.com/dujpte5nz/image/upload/v1682930707/pexels-daniel-maforte-5544043_esrvco.jpg",
+	},
+	{
+		id: 8,
+		text: "Currency Converter",
+		image:
+			"https://res.cloudinary.com/dujpte5nz/image/upload/v1685226464/omid-armin-8Nppe0yLmn8-unsplash_y8iruo.jpg",
+	},
+];
+
+function addItemToDom(item) {
+	let rowDiv = document.getElementById("data");
+	let dataDiv = document.createElement("div");
+	dataDiv.className = "col-6 col-lg-3 mb-4";
+	dataDiv.innerHTML = `
+  <a href = ${item.id}>  
+  <div class = "tile">
+    <img src = ${item.image} alt = ${item.text}/>
+    <div class = "tile-text text-center" id = "card_text">
+    <h5> ${item.text} </h5>
+    </div>
+  </div>
+  </a>`;
+	rowDiv.appendChild(dataDiv);
+}
+
+const addDataToDiv = (data) => {
+	data.forEach((item) => {
+		addItemToDom(item);
+	});
+};
+
+(async function () {
+	addDataToDiv(cards);
+})();

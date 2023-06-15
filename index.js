@@ -50,7 +50,7 @@ let cards = [
 		id: 1,
 		text: "Tic Tac Toe",
 		image:
-			"https://res.cloudinary.com/dujpte5nz/image/upload/v1686747385/tictactoe_twxc8u.avif",
+			"https://res.cloudinary.com/dujpte5nz/image/upload/v1685225605/pexels-el%C4%ABna-ar%C4%81ja-3400795_hoixdm.jpg",
 	},
 	{
 		id: 2,
@@ -109,7 +109,7 @@ function addItemToDom(item) {
     </div>
   </div>
   </a>`;
-	rowDiv.appendChild(dataDiv);
+	rowDiv.append(dataDiv);
 }
 
 const addDataToDiv = (data) => {

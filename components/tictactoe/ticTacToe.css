@@ -33,6 +33,160 @@ body {
 	font-weight: 600;
 }
 
+/* TicTacToe  */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+
+#ticTacToe {
+	height: 100vh;
+	background-color: #56baed;
+}
+
+.selectionBox {
+	font-family: "Montserrat", sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.3s ease;
+}
+
+.selectionBox {
+	background-color: #fff;
+	padding: 20px 25px 25px;
+	border-radius: 5px;
+	max-width: 525px;
+	width: 100%;
+	color: #fff;
+	display: none;
+}
+
+.selectionBox.hide {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.selectionBox header {
+	color: black;
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	border-bottom: 2px solid darkslategray;
+}
+
+.selectionBox .title {
+	color: black;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 20px 0;
+}
+
+.selectionBox .options {
+	display: flex;
+	width: 100%;
+}
+
+.options button {
+	width: 100%;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 0;
+	border: none;
+	background-color: #1565c0;
+	border-radius: 5px;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.options button:hover,
+btn button:hover {
+	transform: scale(0.96);
+}
+
+.options .champX {
+	margin-right: 5px;
+}
+
+.options .champO {
+	margin-left: 5px;
+}
+
+.selectionBox,
+.play-board {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.play-board .details {
+	background-color: #fff;
+	padding: 7px;
+	border-radius: 5px;
+}
+
+.play-board section span {
+	display: block;
+	margin: 3px;
+	height: 105px;
+	width: 105px;
+	border-radius: 6px;
+	background-color: #fff;
+	font-size: 60px;
+	text-align: center;
+	line-height: 100px;
+	color: #007aff;
+}
+
+.play-board section {
+	display: flex;
+}
+
+.play-board .play-area {
+	margin-top: 20px;
+}
+
+.play-board .details .players {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	position: relative;
+}
+
+.play-board .details .players span {
+	width: 100%;
+	border-radius: 5px;
+	padding: 7px 0;
+	font-size: 19px;
+	font-weight: 500;
+	cursor: default;
+	text-align: center;
+	position: relative;
+	z-index: 5;
+}
+
+.details span:first-child {
+	color: #fff;
+}
+
+.details .slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 50%;
+	background-color: #007aff;
+	border-radius: 5px;
+	z-index: 2;
+}
+
 /* =========================================footer CSS====================================================== */
 
 footer {
@@ -46,6 +200,7 @@ footer {
 	font-size: large;
 	font-weight: 200;
 }
+
 #container-footer {
 	position: relative;
 	left: 10px;

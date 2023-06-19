@@ -1,0 +1,168 @@
+/* navbar CSS */
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+#navbarWrapper {
+	background-color: #007aff;
+	font-size: large;
+	font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+	width: 27px;
+	height: 9px;
+	background: linear-gradient(96.34deg, #e537b0 0%, #c040df 100%);
+	border-radius: 4.5px;
+}
+
+#exploreBtn {
+	background-color: #007aff;
+}
+
+#exploreBtn:hover {
+	background-color: black;
+}
+
+#exploreItems {
+	background-color: #007aff;
+}
+
+#componentsText {
+	font-size: xx-large;
+	font-weight: 600;
+}
+
+/* =========================================footer CSS====================================================== */
+
+footer {
+	width: 100%;
+	padding: 16px 0px;
+	color: #999;
+	vertical-align: bottom;
+	margin-top: 40px;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: large;
+	font-weight: 200;
+}
+#container-footer {
+	position: relative;
+	left: 10px;
+	top: 30px;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+
+#footer {
+	display: flex;
+	justify-content: space-between;
+	background-color: #007aff;
+}
+
+.footer-icon {
+	height: 13vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer ul {
+	display: flex;
+}
+
+#footer ul li {
+	position: relative;
+	display: block;
+	height: 40px;
+	width: 40px;
+	font-size: 20px;
+	line-height: 36px;
+	color: whitesmoke;
+	background-color: black;
+	cursor: pointer;
+	border: 2px solid white;
+	border-radius: 50%;
+	margin: 0 15px;
+}
+
+#footer ul li:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	background-color: #d35400;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	z-index: -1;
+	transform: scale(0.9);
+	transition: 0.5s;
+}
+
+#footer ul li:hover {
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(1):before {
+	background-color: #0a82ed;
+}
+
+#footer ul li:nth-child(1):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #0a82ed;
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(2):before {
+	background-color: #04a2ffb3;
+}
+
+#footer ul li:nth-child(2):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #04a2ffb3;
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(3):before {
+	background: #d6249f;
+	background: radial-gradient(
+		circle at 30% 107%,
+		#fdf497 0%,
+		#fdf497 5%,
+		#fd5949 45%,
+		#d6249f 60%,
+		#285aeb 90%
+	);
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+#footer ul li:nth-child(3):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #e23670;
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(4):before {
+	background: #1565c0;
+}
+
+#footer ul li:nth-child(4):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #0a82ed;
+	transform: scale(1.2);
+}
+
+#footer ul li:nth-child(5):before {
+	background-color: #ff1a1a;
+}
+
+#footer ul li:nth-child(5):hover:before {
+	filter: blur(4px);
+	box-shadow: 0 0 15 #ff1a1a;
+	transform: scale(1.2);
+}
+
+/* =========================================footer CSS====================================================== */

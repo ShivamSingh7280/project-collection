@@ -150,7 +150,7 @@ searchElement.addEventListener("keyup", (e) => {
 // navbar ul_li_Dynamic
 const ulElement = document.getElementById("exploreItems");
 cards.forEach((card) => {
-	console.log(card);
+	// console.log(card);
 	ulElement.innerHTML += `
 	<li><a class="dropdown-item" href=${card?.path}> ${card.text}</a></li>
 	`;

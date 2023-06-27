@@ -4,6 +4,8 @@ body {
 }
 
 #navbarWrapper {
+	position: relative;
+	z-index: 10;
 	background-color: #007aff;
 	font-size: large;
 	font-family: "Montserrat", sans-serif;
@@ -31,6 +33,289 @@ body {
 #componentsText {
 	font-size: xx-large;
 	font-weight: 600;
+}
+
+/* BMI CALCULATOR.  */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+
+#bmiCalculator {
+	height: 165vh;
+	background-color: #56baed;
+}
+
+.bmiBox {
+	font-family: "Montserrat", sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -25%);
+	transition: all 0.3s ease;
+}
+
+.bmiBox {
+	background-color: #fff;
+	padding: 20px 25px 25px;
+	border-radius: 5px;
+	max-width: 525px;
+	width: 100%;
+	color: #fff;
+}
+
+.bmiHeading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 2px;
+	border-radius: 5px;
+	border-color: black;
+	transition: all 0.3s ease;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.bmiHeading h1 {
+	font-family: "Montserrat", sans-serif;
+	color: black;
+}
+
+.ageBox {
+	margin: 15px;
+	height: 100px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.ageBox label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	font-size: x-large;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 10px;
+}
+
+.ageDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+}
+
+.ageDiv input {
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+.radioBtn {
+	margin: 15px;
+	height: 100%;
+	padding-bottom: 15px;
+
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.radioBtn .h3Div {
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	font-size: x-large;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 10px;
+}
+
+.genderItem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.genderItem label {
+	color: black;
+	font-size: large;
+	font-family: "Montserrat", sans-serif;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.genderItem input {
+	cursor: pointer;
+}
+
+.genderItem span {
+	display: flex;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.bodyMass {
+	margin: 15px;
+	height: 100%;
+	padding-bottom: 15px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.massItem {
+	padding-top: 18px;
+}
+
+.massItem input {
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+.bodyMass label {
+	color: black;
+	font-size: large;
+	font-family: "Montserrat", sans-serif;
+	margin-left: 10px;
+}
+
+.bodyMass span {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 12px;
+}
+
+.calculateBtn {
+	width: 460px;
+}
+
+.calculateBtn button {
+	width: 100%;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 0;
+	border: none;
+	background-color: #1565c0;
+	border-radius: 5px;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.resultBox {
+	margin: 15px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.resultBoxHeading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: darkslategrey;
+	font-size: x-large;
+	font-family: "Montserrat", sans-serif;
+	margin-top: 18px;
+	font-weight: 400;
+}
+
+.resultClass {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#result {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 125px;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 0;
+	border: none;
+	background-color: #1565c0;
+	border-radius: 5px;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.commentDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	width: 100%;
+	color: darkslategrey;
+	font-size: x-large;
+	font-family: "Montserrat", sans-serif;
+	margin-top: 18px;
+	font-weight: 400;
+}
+
+.commentDiv p {
+	color: black;
+	width: 400px;
+	height: 100%;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px;
+	border: none;
+	border: 2px dashed #1565c0;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.refreshBtn {
+	width: 460px;
+}
+
+.refreshBtn button {
+	width: 100%;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 0;
+	border: none;
+	background-color: #1565c0;
+	border-radius: 5px;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.bmiRange {
+	margin: 15px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.bmiRange h3 {
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bmiRange .ulRanges {
+	color: black;
+	margin: 10px;
+	padding: 10px;
+}
+
+.ulRanges li {
+	padding-left: 5px;
+	color: black;
+	background-color: #56baed;
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+li strong {
+	color: black;
 }
 
 /* =========================================footer CSS====================================================== */

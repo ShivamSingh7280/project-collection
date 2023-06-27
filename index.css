@@ -17,15 +17,25 @@ body {
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
+#inputDiv {
+	background-color: #007aff;
+}
+
 #search_bar {
 	display: flexbox;
 	border-radius: 10px;
-	box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+	background-color: #007aff;
+	/* box-shadow: 0 3px 10px rgb(0 0 0 / 0.3); */
+}
+
+.search_barDiv {
+	padding: 0;
 }
 
 #inputBox {
+	margin: 0;
 	font-size: large;
-	padding-left: 30px;
+	padding-left: 33px;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
@@ -39,6 +49,7 @@ body {
 
 #exploreBtn {
 	background-color: #007aff;
+	border: none;
 }
 
 #exploreBtn:hover {

@@ -77,6 +77,112 @@
 			</div>
 		</nav>
 
+		<!-- BMI CALCULATOR. -->
+
+		<div id="bmiCalculator">
+			<div class="bmiBox">
+				<form id="user_Data">
+					<div class="bmiHeading">
+						<h1>BMI CALCULATOR</h1>
+					</div>
+					<div class="ageBox">
+						<div>
+							<label for="age">AGE(years)</label>
+						</div>
+						<div class="ageDiv">
+							<input
+								type="number"
+								name="age"
+								id="age"
+								placeholder="Enter your age" />
+						</div>
+					</div>
+					<div class="radioBtn">
+						<div class="h3Div">
+							<h3>GENDER</h3>
+						</div>
+						<div class="genderItem">
+							<span>
+								<span class="span1">
+									<input type="radio" name="gender" id="male" value="male" />
+									<div>
+										<label for="male">MALE</label>
+									</div>
+								</span>
+							</span>
+							<span>
+								<span class="span2">
+									<input
+										type="radio"
+										name="gender"
+										id="female"
+										value="female" />
+									<div>
+										<label for="female">FEMALE</label>
+									</div>
+								</span>
+							</span>
+						</div>
+					</div>
+
+					<div class="bodyMass">
+						<div class="massItem">
+							<span>
+								<div>
+									<label for="height">HEIGHT(cm)</label>
+								</div>
+								<input type="number" name="height" id="height" />
+							</span>
+							<span>
+								<div>
+									<label for="weight">WEIGHT(kg)</label>
+								</div>
+								<input type="number" name="weight" id="weight" />
+							</span>
+						</div>
+					</div>
+
+					<div class="calculateBtn">
+						<button type="submit">CALCULATE BMI</button>
+					</div>
+				</form>
+				<div class="resultBox">
+					<div class="resultBoxHeading">
+						<p>Your BMI is</p>
+					</div>
+					<div class="resultClass">
+						<div id="result">00.00</div>
+					</div>
+					<div class="commentDiv">
+						<p class="comment">
+							You are extremely obese. Please take care of yourself.
+						</p>
+					</div>
+				</div>
+				<div class="refreshBtn">
+					<button>CHECK FOR ANOTHER</button>
+				</div>
+
+				<div class="bmiRange">
+					<h3>BMI CATEGORIES</h3>
+					<ul class="ulRanges">
+						<li><strong>Underweight</strong>: BMI less than 18.5</li>
+						<li><strong>Normal weight</strong> : BMI between 18.5 and 24.9</li>
+						<li><strong> Overweight</strong> : BMI between 25 and 29.9</li>
+						<li>
+							<strong>Obesity (Class 1) </strong> : BMI between 30 and 34.9
+						</li>
+						<li>
+							<strong> Obesity (Class 2) </strong> : BMI between 35 and 39.9
+						</li>
+						<li>
+							<strong> Severe obesity (Class 3) </strong> : BMI 40 or higher
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
 		<!-- Footer -->
 
 		<footer id="footer">

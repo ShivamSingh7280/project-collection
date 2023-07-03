@@ -86,11 +86,13 @@
 						<h1>BMI CALCULATOR</h1>
 					</div>
 					<div class="ageBox">
+						<!-- checkbox/radio -->
 						<div>
 							<label for="age">AGE(years)</label>
 						</div>
 						<div class="ageDiv">
 							<input
+								required
 								type="number"
 								name="age"
 								id="age"
@@ -131,13 +133,13 @@
 								<div>
 									<label for="height">HEIGHT(cm)</label>
 								</div>
-								<input type="number" name="height" id="height" />
+								<input required type="number" name="height" id="height" />
 							</span>
 							<span>
 								<div>
 									<label for="weight">WEIGHT(kg)</label>
 								</div>
-								<input type="number" name="weight" id="weight" />
+								<input required type="number" name="weight" id="weight" />
 							</span>
 						</div>
 					</div>
@@ -162,7 +164,6 @@
 				<div class="refreshBtn">
 					<button>CHECK FOR ANOTHER</button>
 				</div>
-
 				<div class="bmiRange">
 					<h3>BMI CATEGORIES</h3>
 					<ul class="ulRanges">
